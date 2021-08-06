@@ -1,0 +1,4 @@
+* BroccoliVim
+A Neovim configuration inspired by Spacemacs and  base on Fennel-lang
+
+*Attention: this project is under heavy development and might break anything you see! 
