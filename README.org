@@ -1,9 +1,52 @@
-* GentleWind
+* GentleWind (aka. GentleVim)
 
 #+begin_quote
 微风吹着浮云，细雨漫漫飘落大地。
 #+end_quote
 
-A Neovim configuration inspired by Spacemacs and  base on Fennel-lang
+A Neovim configuration inspired by [[https://www.spacemacs.org/][Spacemacs]] and base on [[https://fennel-lang.org][Fennel]].
 
-*Attention: this project is under heavy development and might break anything you see!
+*Attention: this project is under heavy development and might break anything you see!*
+
+* Basic Opinions
+  1. Operation habits are valuable, for me most of them are nurtured from Spacemacs.
+  2. Lisp(-like) languages are better configuration languages. :)
+  3. Link as many external services as possible. (via dbus/rpc/nREPL, it depends)
+  4. REPL loops and commands exist everywhere, just like air.
+
+* Requirements
+  - Neovim >= 0.5
+  - [[https://github.com/Olical/aniseed][Olical/Anissed]]
+  - [[https://github.com/wbthomason/packer.nvim][wbthomason/packer.nvim]]
+
+* Install
+  TODO
+
+* Roadmap
+  1. [ ] Plugin management
+  2. [ ] Fennel development toolkit (basic)
+     1. [ ] repl
+     2. [ ] formatting
+  3. [ ] Project/Buffer/Window management
+  4. [ ] Support Git
+  5. [ ] LSP
+  6. [ ] Themes
+     1. [ ] better colors, better icons
+  7. [ ] Support Golang
+  8. [ ] Keymap tuning
+  9. [ ] Fennel development toolkit (advance)
+     1. [ ] searcher
+     2. [ ] lsp
+     3. [ ] package management
+     4. [ ] external development support (eg. Hammerspoon, awesome)
+  10. [ ] Support Dbus
+  11. [ ] Support Hammerspoon
+  12. [ ] Inter-op with emacs
+  13. [ ] Snippets
+
+
+* Roadmap (fennel)
+  1. [ ] standalone lsp
+  2. [ ] nvim lsp
+  3. [ ] imenu-list support
+  4. [ ] interop rpc

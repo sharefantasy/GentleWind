@@ -39,3 +39,5 @@
 (telescope.load_extension :packer)
 (telescope.load_extension :snippets)
 (telescope.load_extension :vim_bookmarks)
+
+(set nvim.g.bookmark_no_default_key_mappings 1)
