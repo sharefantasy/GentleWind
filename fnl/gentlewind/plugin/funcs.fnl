@@ -1,6 +1,8 @@
 (module gentlewind.plugin.funcs
         {autoload {a aniseed.core}
                   require-macros [aniseed.macros]})
+
+
 ;; set global layers management
 (local layers {})
 ;; define plugins set, only order by name and define order
@@ -49,7 +51,7 @@
      :plugins {}
      :before_load nil
      :after_load nil
-     ::#gentlewind-layer true})
+     :#gentlewind-layer true})
 
 (fn layer? [maybe-layer]
     (and (table? maybe-spec) (~= (?. maybe-spec :#gentlewind-layer) nil)))

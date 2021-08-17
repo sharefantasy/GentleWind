@@ -26,6 +26,10 @@
 
  :enum (fn [typename ...]
            ;; 定义几个枚举方法
+
+           `(defn ,(sym (.. typename "?"))
+
+                    )
            )
 
  }
