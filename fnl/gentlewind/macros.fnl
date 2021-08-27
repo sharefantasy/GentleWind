@@ -25,11 +25,25 @@
               `(nvim.set_keymap ,mode ,from ,to {:noremap true}))
 
  :enum (fn [typename ...]
-           ;; 定义几个枚举方法
+           ;; 定义几个枚举方法, 以fruits为例
+           (let [
+                 body [...]
+                 check-has-doc (fn () (= (type (a.first body)) "string"))
+                 enumdoc (if (check-hasdoc) (a.first body) (.. "enum " (string typename)))
+                 elements (if (check-hasdoc) (a.rest body) body)
+                 ]
+             (a.run! (fn [e] (assert e)) elements)
+             ;; (fruits?)
+             `(defn ,(sym (.. (string typename)"?"))
 
-           `(defn ,(sym (.. typename "?"))
+                )
+             ;; (fruits) 枚举全集
+             `()
+             ;; 定义符号
+             ;; 值集合
+             []
+             )
 
-                    )
            )
 
  }
